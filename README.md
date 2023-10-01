@@ -98,12 +98,12 @@ flowchart TD;
 	untr(untracked)
 	trcd(tracked)
 
-	untr-->stg
-	stg-->trcd
-	trcd-->mdf
-	mdf-->stg
-	stg-->mdf
-	style stg fill: F9CA0F
+	untr-- git add -->stg
+	stg-- git commit -->trcd
+	trcd-- some change -->mdf
+	mdf-- git add -->stg
+	stg-- some change -->mdf
+	style stg fill: orange
 ```
 
 
