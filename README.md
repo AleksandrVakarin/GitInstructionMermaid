@@ -103,7 +103,7 @@ flowchart TD;
 	trcd-->mdf
 	mdf-->stg
 	stg-->mdf
-	
+	style stg fill: rgba(245, 174, 39, 0.8)
 ```
 
 
