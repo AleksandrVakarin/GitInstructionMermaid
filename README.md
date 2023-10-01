@@ -103,10 +103,10 @@ flowchart TD;
 	sc([some change])
 
 
-	untr-- ga -->stgd
-	mdf-- ga -->stgd-- gc -->trcd
-	trcd-- sc -->mdf-- ga --> stgd
-	stgd-- sc -->mdf
+	untr--> ga -->stgd
+	mdf--> ga -->stgd--> gc -->trcd
+	trcd--> sc -->mdf--> ga --> stgd
+	stgd--> sc -->mdf
 
 	style stgd fill: orange
 	style untr fill: blue
