@@ -98,9 +98,7 @@ flowchart TD;
 	untr(untracked<br>неотслеживаемые)
 	trcd(tracked<br>отслеживаемые)
 
-	subgraph untracked
-		untr-- git add -->stgd
-	end
+	untr-- git add -->staged + trucked
 
 	subgraph staged + trucked
 		stgd -- git commit -->trcd
@@ -109,7 +107,6 @@ flowchart TD;
 	end
 
 	subgraph tracked 
-		
 		stgd-- some change -->mdf
 	end
 
