@@ -100,6 +100,7 @@ flowchart TD;
 
 	untr-- git add -->stgd-- git commit -->trcd
 	trcd-- some change -->mdf-- git add --> stgd
+	stgd-- some change -->mdf
 
 	style stgd fill: orange
 ```
