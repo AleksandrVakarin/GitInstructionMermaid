@@ -91,17 +91,18 @@ HEAD - указывает на последний коммит, можно пе�
 ## Статусы файлов.
 
 ```mermaid
-flowchart TD
-  participant untracked
-  participant staged tracked
-  participant tracked
-  participant modified
+flowchart TD;
+	
+	stg((staged + tracked))
+	mdf(modified)
+	untr(untracked)
+	trcd(tracked)
 
-  untracked --> staged tracked: git add
-  staged tracked --> tracked: git commit
-  tracked --> modified: some change
-  modified --> staged tracked: git add
-  staged tracked --> modified: some change
+	untr-->stg
+	stg-->trcd
+	trcd-->mdf
+	mdf-->stg
+	stg-->mdf
 ```
 
 
