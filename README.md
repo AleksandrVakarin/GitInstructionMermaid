@@ -90,7 +90,7 @@ HEAD - указывает на последний коммит, можно пе�
 
 ## Статусы файлов.
 
-''' mermade
+''' mermaid
 Git file cycle;
 	participan untracked;
 	participan staged + tracked;
@@ -102,6 +102,8 @@ Git file cycle;
 	tracked --> mogified: some change;
 	modified --> staged + tracked: git add;
 	staged + tracked --> modified: some change;
+
+	syle staged + tracked fill: rgba(245, 174, 39, 0.8);
 
 '''
 
