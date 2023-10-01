@@ -98,7 +98,7 @@ flowchart TD;
 	untr(untracked<br>неотслеживаемые)
 	trcd(tracked<br>отслеживаемые)
 
-	subgraph untracked
+	subgraph
 		измененный
 	end
 
