@@ -93,7 +93,7 @@ HEAD - указывает на последний коммит, можно пе�
 ```mermaid
 flowchart TD;
 	
-	stg((staged + tracked<br>подготовленные<br> + отслеживаемые))
+	stgd((staged + tracked<br>подготовленные<br> + отслеживаемые))
 	mdf{modified<br>измененные}
 	untr{untracked<br>неотслеживаемые}
 	trcd{tracked<br>отслеживаемые}
@@ -103,12 +103,10 @@ flowchart TD;
 	sc(some change)
 	style ga gc sc fill: grey
 
-	untr-- (git) -->stg
-	stg--> gc -->trcd
-	trcd--> sc -->mdf
-	mdf--> ga -->stg
-	stg--> sc -->mdf
-	style stg fill: orange
+	untr--> ga -->stgd--> gc -->trcd
+	trcd--> sc -->mdf--> ga --> stgd
+
+	style stgd fill: orange
 ```
 
 
