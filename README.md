@@ -93,10 +93,10 @@ HEAD - указывает на последний коммит, можно пе�
 ```mermaid
 flowchart TD;
 	
-	stg((staged + tracked<br>неотслеживаемые + подготовленные))
-	mdf{modified}
-	untr{untracked}
-	trcd{tracked}
+	stg((staged + tracked<br>неотслеживаемые<br> + подготовленные))
+	mdf{modified<br>измененные}
+	untr{untracked<br>неотслеживаемые}
+	trcd{tracked<br>отслеживаемые}
 
 	ga(git add)
 	gc(git commit)
