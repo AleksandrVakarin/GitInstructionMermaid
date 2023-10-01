@@ -103,7 +103,7 @@ flowchart TD;
 	trcd-->mdf
 	mdf-->stg
 	stg-->mdf
-	style stg fill: orange
+	style stg fill: F9CA0F
 ```
 
 
