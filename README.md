@@ -98,7 +98,7 @@ flowchart TD;
 	untr(untracked<br>неотслеживаемые)
 	trcd(tracked<br>отслеживаемые)
 
-	subgraph untrStg
+	subgraph untrStgd
 		untr-- git add -->stgd
 	end
 
@@ -109,16 +109,22 @@ flowchart TD;
 
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
+	style untrStgd fill: green
 ```
 
 
 <br><br>
 
 
-- untracked - неотслеживаемые; <br>
-- staged - подготовленные; <br>
-- tracked - отслежтваемые; <br>
-- modified - измененные; <br>
+fill — заливка;
+
+stroke — цвет границы;
+
+stroke-width — толщина границы;
+
+color — цвет текста;
+
+stroke-dasharray — пунктирная граница.
 
 ---
 <br><br>
