@@ -91,12 +91,11 @@ HEAD - указывает на последний коммит, можно пе�
 ## Статусы файлов.
 
 ```mermaid
-Git file cycle
+sequenceDiagram
   participant untracked
   participant staged tracked
   participant tracked
   participant modified
-
   untracked --> staged tracked: git add
   staged tracked --> tracked: git commit
   tracked --> modified: some change
