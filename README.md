@@ -102,13 +102,17 @@ flowchart TD;
 		untr-- git add -->stgd
 	end
 
-	subgraph tracked 
+	subgraph staged + trucked
 		stgd -- git commit -->trcd
 		trcd-- some change -->mdf
 		mdf<-- git add --> stgd
+	end
+
+	subgraph tracked 
+		
 		stgd-- some change -->mdf
 	end
-	
+
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
 	style untracked fill: #299CFF
