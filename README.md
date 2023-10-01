@@ -98,11 +98,15 @@ flowchart TD;
 	untr(untracked)
 	trcd(tracked)
 
-	untr-- {git add} -->stg
-	stg-- {git commit} -->trcd
-	trcd-- {some change} -->mdf
-	mdf-- {git add} -->stg
-	stg-- {some change} -->mdf
+	ga{git add}
+	gc{git commit}
+	sc{some change}
+
+	untr-- ga -->stg
+	stg-- gc -->trcd
+	trcd-- sc -->mdf
+	mdf-- ga -->stg
+	stg-- sc -->mdf
 	style stg fill: orange
 ```
 
