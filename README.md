@@ -90,21 +90,18 @@ HEAD - указывает на последний коммит, можно пе�
 
 ## Статусы файлов.
 
-'''mermaid
-Git file cycle
-    participant untracked;
-    participant staged + tracked;
-    participant tracked;
-    participant modified;
-
-    untracked --> staged + tracked: git add;
-    staged + tracked --> tracked: git commit -m;
-    tracked --> modified: some change;
-    modified --> staged + tracked: git add;
-    staged + tracked --> modified: some change;
-
-  	style staged + tracked fill: rgba(245, 174, 39, 0.8)
-'''
+```mermaid
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
 
 
 <br><br>
