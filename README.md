@@ -100,13 +100,13 @@ flowchart TD;
 
 
 	untr-- git add -->stgd
-	mdf-- git add -->stgd -- git commit -->trcd
+	stgd -- git commit -->trcd
 	trcd-- some change -->mdf
 	mdf-- git add --> stgd
 	stgd-- some change -->mdf
 
-	style stgd fill: #F9CA0F
-	style untr fill: blue
+	style stgd fill: #FFB129
+	style untr fill: #93C7FA
 ```
 
 
