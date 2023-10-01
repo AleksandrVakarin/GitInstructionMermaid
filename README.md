@@ -98,11 +98,11 @@ flowchart TD;
 	untr(untracked)
 	trcd(tracked)
 
-	untr-->stg
-	stg-->trcd
-	trcd-->mdf
-	mdf-->stg
-	stg-->mdf
+	untr-->stg: git add
+	stg-->trcd: git commit
+	trcd-->mdf: some change
+	mdf-->stg: git add
+	stg-->mdf: some change
 ```
 
 
