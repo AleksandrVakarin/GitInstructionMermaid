@@ -98,8 +98,8 @@ flowchart TD;
 	untr{untracked<br>неотслеживаемые}
 	trcd{tracked<br>отслеживаемые}
 
-	untr--> git add -->stgd--> git commit -->trcd
-	trcd--> some change -->mdf--> git add --> stgd
+	untr-- git add -->stgd-- git commit -->trcd
+	trcd-- some change -->mdf-- git add --> stgd
 
 	style stgd fill: orange
 ```
