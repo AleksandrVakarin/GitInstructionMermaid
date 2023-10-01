@@ -91,7 +91,7 @@ HEAD - указывает на последний коммит, можно пе�
 ## Статусы файлов.
 
 ```mermaid
-flowchart TD;
+sequenceDiagram
 	
 	stg((staged + tracked))
 	mdf(modified)
