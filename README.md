@@ -93,14 +93,14 @@ HEAD - указывает на последний коммит, можно пе�
 ```mermaid
 sequenceDiagram
   participant untracked
-  participant staged tracked
+  participant staged + tracked
   participant tracked
   participant modified
-  untracked --> staged tracked: git add
-  staged tracked --> tracked: git commit
+  untracked --> staged + tracked: git add
+  staged + tracked --> tracked: git commit
   tracked --> modified: some change
-  modified --> staged tracked: git add
-  staged tracked --> modified: some change
+  modified --> staged + tracked: git add
+  staged + tracked --> modified: some change
 ```
 
 
