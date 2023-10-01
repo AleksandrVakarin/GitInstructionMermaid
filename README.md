@@ -101,13 +101,13 @@ flowchart TD;
 	ga(git add)
 	gc(git commit)
 	sc(some change)
-	style ga fill: black
+	style ga gc sc fill: grey
 
-	untr--> ga -->stg
-	stg--> gc -->trcd
-	trcd--> sc -->mdf
-	mdf--> ga -->stg
-	stg--> sc -->mdf
+	untr-- ga -->stg
+	stg-- gc -->trcd
+	trcd-- sc -->mdf
+	mdf-- ga -->stg
+	stg-- sc -->mdf
 	style stg fill: orange
 ```
 
