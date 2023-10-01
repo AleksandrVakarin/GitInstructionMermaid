@@ -105,7 +105,7 @@ flowchart TD;
 	mdf-- git add --> stgd
 	stgd-- some change -->mdf
 
-	style stgd fill: orange
+	style stgd fill: #F9CA0F
 	style untr fill: blue
 ```
 
