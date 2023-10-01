@@ -99,7 +99,7 @@ flowchart TD;
 	trcd(tracked<br>отслеживаемые)
 
 	subgraph untracked
-		untr-- git add -->stagedTrucked
+		untr-- git add -->stgd
 	end
 
 	subgraph stagedTrucked
