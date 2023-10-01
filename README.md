@@ -102,11 +102,11 @@ flowchart TD;
 	gc{git commit}
 	sc{some change}
 
-	untr-- ga -->stg
-	stg-- gc -->trcd
-	trcd-- sc -->mdf
-	mdf-- ga -->stg
-	stg-- sc -->mdf
+	untr--> ga -->stg
+	stg--> gc -->trcd
+	trcd--> sc -->mdf
+	mdf--> ga -->stg
+	stg--> sc -->mdf
 	style stg fill: orange
 ```
 
