@@ -103,7 +103,7 @@ flowchart TD;
 	sc(some change)
 	style ga gc sc fill: grey
 
-	untr--> git -->stg
+	untr--> (git) -->stg
 	stg--> gc -->trcd
 	trcd--> sc -->mdf
 	mdf--> ga -->stg
