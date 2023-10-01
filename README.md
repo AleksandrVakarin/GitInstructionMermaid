@@ -103,8 +103,6 @@ Git file cycle;
 	modified --> staged + tracked: git add;
 	staged + tracked --> modified: some change;
 
-	syle staged + tracked fill: rgba(245, 174, 39, 0.8);
-	
 '''
 
 - untracked - неотслеживаемые; <br>
