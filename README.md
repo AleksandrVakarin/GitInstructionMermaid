@@ -110,7 +110,7 @@ flowchart TD;
 
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
-	style untrStgd fill: green
+	style untracked<br>неотслеживаемый fill: #299CFF
 ```
 
 
