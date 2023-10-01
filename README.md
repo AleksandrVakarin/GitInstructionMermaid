@@ -94,13 +94,13 @@ HEAD - указывает на последний коммит, можно пе�
 flowchart TD;
 	
 	stg((staged + tracked))
-	mdf(modified)
-	untr(untracked)
-	trcd(tracked)
+	mdf{(modified)}
+	untr{(untracked)}
+	trcd{(tracked)}
 
-	ga{git add}
-	gc{git commit}
-	sc{some change}
+	ga(git add)
+	gc(git commit)
+	sc(some change)
 
 	untr--> ga -->stg
 	stg--> gc -->trcd
