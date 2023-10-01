@@ -93,7 +93,7 @@ HEAD - указывает на последний коммит, можно пе�
 ```mermaid
 flowchart TD;
 	
-	stg((staged + tracked))
+	stg((staged + tracked<br>неотслеживаемые + подготовленные))
 	mdf{modified}
 	untr{untracked}
 	trcd{tracked}
