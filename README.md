@@ -101,6 +101,7 @@ flowchart TD;
 	ga(git add)
 	gc(git commit)
 	sc(some change)
+	style ga gc sc fill: white
 
 	untr--> ga -->stg
 	stg--> gc -->trcd
