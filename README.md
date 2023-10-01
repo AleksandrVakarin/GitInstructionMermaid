@@ -98,15 +98,12 @@ flowchart TD;
 	untr(untracked<br>неотслеживаемые)
 	trcd(tracked<br>отслеживаемые)
 
-	ga([git add])
-	gc([git commit])
-	sc([some change])
 
-
-	untr--> ga -->stgd
-	mdf--> ga -->stgd--> gc -->trcd
-	trcd--> sc -->mdf--> ga --> stgd
-	stgd--> sc -->mdf
+	untr-- git add -->stgd
+	mdf-- git add -->stgd -- git commit -->trcd
+	trcd-- some change -->mdf
+	mdf-- git add --> stgd
+	stgd-- some change -->mdf
 
 	style stgd fill: orange
 	style untr fill: blue
