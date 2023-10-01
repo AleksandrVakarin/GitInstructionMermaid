@@ -90,22 +90,22 @@ HEAD - указывает на последний коммит, можно пе�
 
 ## Статусы файлов.
 
-''' mermaid
-Git file cycle;
-	participan untracked;
-	participan staged + tracked;
-	participan tracked;
-	participan mogified;
+'''mermaid
+Git file cycle
+	participan untracked
+	participan staged + tracked
+	participan tracked
+	participan mogified
 
-	untracked --> staged + tracked: git add;
-	staged + tracked --> tracked: git commit -m;
-	tracked --> mogified: some change;
-	modified --> staged + tracked: git add;
-	staged + tracked --> modified: some change;
-
-	syle staged + tracked fill: rgba(245, 174, 39, 0.8);
-
+	untracked --> staged + tracked: git add
+	staged + tracked --> tracked: git commit -m
+	tracked --> mogified: some change
+	modified --> staged + tracked: git add
+	staged + tracked --> modified: some change
+	syle staged + tracked fill: rgba(245, 174, 39, 0.8)
 '''
+<br><br>
+
 
 - untracked - неотслеживаемые; <br>
 - staged - подготовленные; <br>
