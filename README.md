@@ -102,10 +102,19 @@ flowchart TD;
 	
 
 	subgraph tracked
-		mdf-- git add --> stgd
-		stgd-- some change -->mdf
-		stgd -- git commit -->trcd
-		trcd-- some change -->mdf
+		subgraph modified
+			mdf
+		end
+
+		subgraph tracked_staged
+			stgd
+		end
+
+		modified-- git add --> tracked_staged
+		tracked_staged-- some change --> modified
+		tracked_staged-- git commit --> trcd
+		trcd-- some change -->modified
+
 	end
 
 
@@ -118,11 +127,14 @@ flowchart TD;
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
 	style untracked fill: #299CFF
+	style tracked fill: #99FF33
 ```
 
 
 <br><br>
 
+
+### Information for mermaid:
 
 fill — заливка;
 
