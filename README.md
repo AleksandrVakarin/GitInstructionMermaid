@@ -102,10 +102,6 @@ flowchart TD;
 	
 
 	subgraph tracked
-		subgraph modified
-			mdf
-		end
-
 		subgraph tracked_staged
 			stgd
 		end
@@ -114,6 +110,13 @@ flowchart TD;
 		tracked_staged-- some change --> modified
 		tracked_staged-- git commit --> trcd
 		trcd-- some change -->modified
+
+		subgraph modified
+			mdf
+		end
+
+		subgraph trackedStaged
+		end
 
 	end
 
