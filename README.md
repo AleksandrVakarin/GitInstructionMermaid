@@ -98,21 +98,22 @@ flowchart TD;
 	untr(untracked<br>неотслеживаемые)
 	trcd(tracked<br>отслеживаемые)
 
+
+	
+
+	subgraph tracked
+		mdf-- git add --> stgd
+		stgd-- some change -->mdf
+		stgd -- git commit -->trcd
+		trcd-- some change -->mdf
+	end
+
+
 	subgraph untracked
 		untr
 	end
 	
 	untracked-- git add -->stgd
-
-	subgraph stagedTrucked
-		stgd -- git commit -->trcd
-		trcd-- some change -->mdf
-		mdf<-- git add --> stgd
-	end
-
-	subgraph tracked 
-		stgd-- some change -->mdf
-	end
 
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
