@@ -115,7 +115,7 @@ flowchart TD;
 			mdf
 		end
 
-		subgraph tracked+staged<br>(в списке на коммит)
+		subgraph tracked+staged<br>
 		end
 
 	end
