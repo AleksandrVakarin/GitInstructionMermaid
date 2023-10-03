@@ -121,11 +121,11 @@ flowchart TD;
 	end
 
 
-	subgraph (untracked)
+	subgraph 
 		untr
 	end
 	
-	untracked-- git add -->stgd
+	untr-- git add -->stgd
 
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
