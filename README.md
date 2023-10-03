@@ -105,10 +105,6 @@ flowchart TD;
 			untr
 		end
 
-		subgraph modified 
-			mdf
-		end
-
 		subgraph tracked_staged+tracked
 
 			subgraph tracked
@@ -121,12 +117,11 @@ flowchart TD;
 
 		end
 
-	
 		untracked-- git add -->staged+tracked
-		modified-- git add -->staged+tracked
-		staged+tracked-- some change -->modified
+		mdf-- git add -->staged+tracked
+		staged+tracked-- some change -->mdf
 		staged+tracked-- git commit -->tracked
-		tracked-- some change -->modified
+		tracked-- some change -->mdf
 	end
 
 	style stgd fill: #FFB129
