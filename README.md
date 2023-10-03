@@ -124,10 +124,10 @@ flowchart TD;
 		end
 		
 		untracked-- git add -->staged+tracked
-		modified-- git add --> staged+tracked
-		staged+tracked-- some change --> modified
-		staged+tracked-- git commit --> tracked
-		tracked-- some change -->modified
+		modf-- git add --> staged+tracked
+		staged+tracked-- some change -->modf
+		staged+tracked-- git commit -->tracked
+		tracked-- some change -->modf
 	end
 
 	style stgd fill: #FFB129
