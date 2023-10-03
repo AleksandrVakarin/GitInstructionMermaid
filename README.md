@@ -99,36 +99,36 @@ flowchart TD;
 	trcd(tracked<br>отслеживаемые)
 
 
-	
+	subgraph Git_State
 
-	subgraph tracked_staged+tracked
+		subgraph tracked_staged+tracked
 
-		subgraph tracked
-			trcd
+			subgraph tracked
+				trcd
+			end
+
+			subgraph staged+tracked
+				stgd
+			end
+
 		end
 
-		subgraph staged+tracked
-			stgd
+
+		subgraph modified 
+			mdf
 		end
 
+
+		subgraph untracked
+			untr
+		end
+		
+		untracked-- git add -->staged+tracked
+		modified-- git add --> staged+tracked
+		staged+tracked-- some change --> modified
+		staged+tracked-- git commit --> tracked
+		tracked-- some change -->modified
 	end
-
-
-	subgraph modified 
-		mdf
-	end
-
-
-	subgraph untracked
-		untr
-	end
-	
-	untracked-- git add -->staged+tracked
-	modified-- git add --> staged+tracked
-	staged+tracked-- some change --> modified
-	staged+tracked-- git commit --> tracked
-	tracked-- some change -->modified
-
 
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
