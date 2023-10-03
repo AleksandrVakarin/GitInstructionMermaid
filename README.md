@@ -101,6 +101,14 @@ flowchart TD;
 
 	subgraph Git_State
 
+		subgraph untracked
+			untr
+		end
+
+		subgraph modified 
+			mdf
+		end
+
 		subgraph tracked_staged+tracked
 
 			subgraph tracked
@@ -113,16 +121,7 @@ flowchart TD;
 
 		end
 
-
-		subgraph modified 
-			mdf
-		end
-
-
-		subgraph untracked
-			untr
-		end
-		
+	
 		untracked-- git add -->staged+tracked
 		mdf-- git add --> staged+tracked
 		staged+tracked-- some change -->mdf
