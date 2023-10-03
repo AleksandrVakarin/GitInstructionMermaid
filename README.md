@@ -125,8 +125,7 @@ flowchart TD;
 	end
 
 	style Git_State fill: #E0E0E0
-	style stgd fill: #FFB129
-	style stgd stroke: green
+	style stgd fill: #FFB129, stroke: FF8000
 	style untr fill: #93C7FA
 	style untracked fill: #299CFF
 	style tracked fill: #99FF33
