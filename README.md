@@ -124,7 +124,7 @@ flowchart TD;
 		tracked-- some change -->mdf
 	end
 
-	style Git_State fill: #FFFFFF
+	style Git_State fill: #E0E0E0
 	style stgd fill: #FFB129
 	style untr fill: #93C7FA
 	style untracked fill: #299CFF
