@@ -127,7 +127,7 @@ flowchart TD;
 	modified-- git add --> staged+tracked
 	staged+tracked-- some change --> modified
 	staged+tracked-- git commit --> tracked
-	trcd-- some change -->modified
+	tracked-- some change -->modified
 
 
 	style stgd fill: #FFB129
