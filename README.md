@@ -142,6 +142,9 @@ flowchart TD;
 
 	style Git_State color: #C0C0C0
 	style tracked_staged+tracked color: #C0C0C0
+	style tracked stroke: color: #FFFFFF
+	style modified color: #FFFFFF
+	style staged+tracked color: #FFFFFF
 
 ```
 
