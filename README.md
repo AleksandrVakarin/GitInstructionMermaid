@@ -129,27 +129,25 @@ flowchart TD;
 
 	end
 
-	style Git_State fill: #C0C0C0, stroke: #E0E0E0
+	style Git_State fill: #E0E0E0, stroke: #E0E0E0
 	style stgd fill: #FFB129, stroke: #FF8000
-	style mdf fill: #FFB129
-	style trcd fill: #FFB129
+	style mdf fill: #FFB129, stroke: #FF8000
+	style trcd fill: #FFB129, stroke: #FF8000
 	style untr fill: #93C7FA, stroke: #FFFFFF
-	style untracked fill: #299CFF, stroke: #3399FF
-	style tracked stroke: #FF8000, color: #FFFFFF
-	style tracked_staged+tracked stroke: #E0E0E0, fill: #C0C0C0
-	style staged+tracked stroke: #FF8000, color: #FFFFFF
-	style modified stroke: #FF8000, color: #FFFFFF
+	style untracked stroke: #3399FF
+	style tracked stroke: #FF8000
+	style tracked_staged+tracked stroke: #E0E0E0, fill: #E0E0E0
+	style staged+tracked stroke: #FF8000
+	style modified stroke: #FF8000
 
-	style Git_State color: #C0C0C0
-	style tracked_staged+tracked color: #C0C0C0
-	style tracked stroke: color: #FFFFFF
+	style Git_State color: #E0E0E0
+	style untracked color: #FFFFFF
+	style tracked_staged+tracked color: #E0E0E0
+	style tracked color: #FFFFFF
 	style modified color: #FFFFFF
 	style staged+tracked color: #FFFFFF
 
 ```
-
-
-<br><br>
 
 
 ### Information for mermaid:
