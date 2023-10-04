@@ -84,8 +84,14 @@ id_ed25519 - приватный(не делиться не копировать)
 HEAD - указывает на последний коммит, можно передавать в качестве параметра в терминале. <br><br>
 
 ## Examples commits:
-- Conventional Commits <type>: <messege> <br>
-<type>: feat - feature (for new functional), fix - исправить устранить - для исправления ошибок. <br>
+- Conventional Commits 
+```html
+ <type>: <messege>
+ ``` 
+```html
+<type>
+```
+: feat - feature (for new functional), fix - исправить устранить - для исправления ошибок. <br>
 - GitHub commit style: "Исправить задачу #354, добавить кнопку заказа" <br><br>
 
 ## Статусы файлов.
