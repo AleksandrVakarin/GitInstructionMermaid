@@ -134,7 +134,7 @@ flowchart TD;
 	style untr fill: #93C7FA, stroke: #FFFFFF
 	style untracked fill: #299CFF, stroke: #3399FF
 	style tracked fill: #99FF33, stroke: #B2FF66
-	style Git_State, tracked_staged+tracked, modified color: white
+	style Git_State color: white
 ```
 
 
