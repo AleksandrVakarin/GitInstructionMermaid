@@ -122,13 +122,18 @@ flowchart TD;
 		staged+tracked-- some change -->mdf
 		staged+tracked-- git commit -->tracked
 		tracked-- some change -->mdf
+
+		subgraph modified
+			mdf
+		end
+
 	end
 
-	style Git_State fill: #E0E0E0, stroke: #E0E0E0
+	style Git_State fill: #E0E0E0, stroke: #E0E0E0, color: #FFFFFF
 	style stgd fill: #FFB129, stroke: #FF8000
-	style untr fill: #93C7FA
-	style untracked fill: #299CFF
-	style tracked fill: #99FF33
+	style untr fill: #93C7FA, stroke: #FFFFFF
+	style untracked fill: #299CFF, stroke: #3399FF
+	style tracked fill: #99FF33, stroke: #B2FF66
 ```
 
 
