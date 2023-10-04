@@ -134,7 +134,7 @@ flowchart TD;
 	style untr fill: #93C7FA, stroke: #FFFFFF
 	style untracked fill: #299CFF, stroke: #3399FF
 	style tracked fill: #99FF33, stroke: #B2FF66
-	style tracked_staged+tracked stroke: #E0E0E0, fill: #C0C0C0
+	style tracked_staged+tracked stroke: #E0E0E0, fill: #E0E0E0
 	style staged+tracked stroke: #FF8000
 	style modified stroke: #E0E0E0
 
