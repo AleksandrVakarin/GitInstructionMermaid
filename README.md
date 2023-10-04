@@ -83,7 +83,7 @@ id_ed25519 - приватный(не делиться не копировать)
 - git log --oneline - сокращенный лог(история коммитов)(max 72 символа) <br>
 HEAD - указывает на последний коммит, можно передавать в качестве параметра в терминале. <br><br>
 
-## Commit:
+## Examples commits:
 - Conventional Commits <type>: <messege> <br>
 <type>: feat - feature (for new functional), fix - исправить устранить - для исправления ошибок. <br>
 - GitHub commit style: "Исправить задачу #354, добавить кнопку заказа" <br><br>
