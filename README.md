@@ -158,18 +158,88 @@ flowchart TD;
 
 ### Information for mermaid:
 
-fill — заливка;
+fill — заливка <br>
+stroke — цвет границы <br>
+stroke-width — толщина границы <br>
+color — цвет текста <br>
+stroke-dasharray — пунктирная граница <br>
 
-stroke — цвет границы;
+<br><br>
 
-stroke-width — толщина границы;
+## Изменить последний коммит.
+### Дополнить коммит файлами:
+git add <file name> - добавляем файлы <br>
+git commit --amend --no-edit - дополнить коммит новыми файлами <br>
+--no-edit сообщает о том, что сообщение коммита остается без изменений <br>
+Изменения в файлах можно добавлять так же! <br>
 
-color — цвет текста;
+### Изменить сообщение коммита:
+git commit --amend -m'NEW MESSAGE' <br>
+ 
 
-stroke-dasharray — пунктирная граница.
+## Как откатиться назад.
+Если сделал git add, но потом передумал: <br>
+git restore --staged file name <br>
+
+### Либо для всех файлов:
+git restore --staged . <br>
+
+### Откатить коммит:
+git reset --hard commit hash - к которому нужно откатить <br>
+
+### Откатить изменения которые не попали ни в staged ни в commit:
+git restore file name - если изменил файл но не сделал git add <br>
+(откат до последнего git add или git commit) <br>
+
+
+## Просмотр изменений в файлах.
+git diff - сравнивает последнюю закомиченную версию файла с текушей(измененной - modified) <br>
+
+### Просмотр изменений в Staging area.
+после команды git add - git diff не выводит ни чего <br>
+нужно использовать git diff --staged <br>
+
+### Дописать строку в файл:
+echo "Any string" >> file.txt <br>
+
+### Посмотреть содиржимое файла:
+cat file name <br>
+
+
+### Сравнить коммиты.
+git diff <хэш 1коммита> <хэш 2коммита> - если наоборот то будет обратный порядок <br>
+
+
+## Игнорирование файлов в Git - .gitignore(тоже нужно коммитить).
+```HTML
+# - комментарий
+
+.file name - игнорирует файлы с именем .file name (в корне и вложенных папках)
+
+*.jpeg - игнорирует все файлы заканчивающиеся на .jpeg
+
+!item.jpeg - только не с именем item (item.jpeg не будет игнорироваться)
+
+docs/*/tmp - игнорирует все файлы tmp во всех подпапках docs (docs/folder1/tmp)
+
+docs/**/tmp - игнорирует docs/folder1/folder2/folder3/.../tmp
+
+* - игнорирует все файлы
+
+file?.txt - игнорирует file1.txt, file2.txt ... до file9.txt
+
+file[0-2].txt - игнорирует file0.txt, file1.txt, file2.txt
+
+/todo.txt - игнорирует todo.txt только в корневой дирректории(в других подпапках будет отслеживаться)
+
+build/ - игнорирует папку build (если build - файл то он не будет игнорироваться)
+
+git status --ignored - отобразить все игнорируемые файлы командой git status --ignored
+```
+
+Выйти из редактора Vim: нажать Esc, ввести :qa!, нажать Enter. <br>
 
 ---
-<br><br>
 
 [My Repository](https://github.com/AleksandrVakarin "Author Repository")
 
